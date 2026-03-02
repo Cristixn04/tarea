@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+#contenido{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+#parrafo{
+    width: 30vw;
+    margin-left: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: min(1vw, 24px) max(1vw, 18px);
+    margin: 25px 0px 25px 50px;
+}
+
+#imagen{
+    width: 35vw;
+    position: absolute;
+    right: 0;
+    top: 11.4vw;
+    z-index: 1;
+}
+
+#dog-paw{
+    width: 9vw;
+    position: absolute;
+    right: 12vw;
+    top: 7vw;
+    z-index: 1;
+}
+
+
+#font{
+    position: absolute;
+    right: 45%;
+    top: 20px;
+    z-index: 0;
+}
+
+#titulo{
+    margin-top: 6vw;
+    width: 50vw;
+    font-size: clamp(10px, 3vw, 30px);
+    margin-left: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#boton{
+    background-color: #333333;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    width: 100px;
+}
+
+#boton:hover{
+    color: #ffffff;
+    background-color: rgb(72, 72, 72);
+    width: 152px;
+    height: 52px;
+    transition: all 0.5s ease;
+
+}
+
+#cards {
+    color: black;
+    width: auto;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    max-width: 32vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#cards p{
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: max(0.9vw, 5px);
+}
+
+#cards h4{
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: max(1.5vw, 10px);
+}
+
+
+.cardclass{
+    padding: 20px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    min-width: 10%;
+    max-width: 220px;
+    border-radius: 20px;
+}
+
+#card1{
+    background-color: #c6d9e1;
+}
+
+#card2{
+    background-color: #f4f4f4;
+}
+
+#card3{
+    font-size: 1vw;
+    background-color: #f4f4f4;
+    height: auto;
+    width: 30vw;
+    margin-left: 3.6vw;
+    margin-bottom: 2vw;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+}
+
+#card3 img{
+    width: 8vw;
+}
+
+#card3 h4{
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: max(1.5vw, 10px);
+}
+
+#card3 p{
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: max(0.9vw, 5px);
+}

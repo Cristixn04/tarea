@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+#contenido{
+    background-color: #f2f2f2;
+    width: 50vw;
+    height: auto;
+    border-radius: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+#titulo{
+    margin-top: 50px;
+}
+
+
+#parrafo{
+    width: 30vw;
+    color: black;
+    margin-left: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(10px, 1vw, 24px);
+    margin: 25px 0px 25px 50px;
+}
+
+b{
+    color: #437223;
+}
+
+#imagen{
+    width: 40vw;
+    position: absolute;
+    right: 13vw;
+    top: 2.5vw;
+    z-index: 1;
+}
+
+
+#dog-paw2{
+    width: 8vw;
+    position: absolute;
+    right: 2.5vw;
+    top: 2.5vw;
+    z-index: 0;
+}
+
+
+#titulo{
+    width: 50vw;
+    font-size: clamp(10px, 3vw, 30px);
+    margin-left: 50px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#boton{
+    background-color: #437223;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 100px;
+}
+
+#boton:hover{
+    color: #ffffff;
+    background-color: rgb(72, 72, 72);
+    width: 152px;
+    height: 52px;
+    transition: all 0.5s ease;
+
+}
+
+#cards {
+    background-color: #ffffff;
+    color: black;
+    width: 95vw;
+    position: absolute;
+    left: 2.5vw;
+    bottom: -60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cards p{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: max(0.9vw, 5px);
+}
+
+#cards h4{
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: max(1.5vw, 10px);
+}
+
+
+.cardclass{
+    padding: 20px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 33%;
+    border: solid 2px #000000;
+}
+
+.cardclass img{
+    width: 10vw;
+}
+
+.cartas{
+    padding: 20px;
+}
+
+footer{ 
+    height: 100px;
+
+}

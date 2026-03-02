@@ -1,0 +1,223 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #f0eeea;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+/* ===========================
+   PÁGINA — dos columnas
+   izquierda: texto | derecha: visual
+=========================== */
+
+
+/* ===========================
+   COLUMNA IZQUIERDA
+=========================== */
+.col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Título grande y grueso */
+h1 {
+  font-size: clamp(26px, 3.5vw, 44px);
+  font-weight: 900;
+  line-height: 1.15;
+  color: #2d1a0e;
+}
+
+/* Párrafo */
+.col-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666666;
+  max-width: 360px;
+}
+
+/* Botón amarillo suave */
+.btn {
+  display: inline-block;
+  background: #f5d76e;
+  color: #2d1a0e;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  width: fit-content;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #e8c94e;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   TARJETA DE ESTADÍSTICAS
+   Fondo marrón oscuro
+=========================== */
+.stats-card {
+  background: #2d1a0e;
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+/* Cada bloque de estadística */
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Número grande */
+.stat strong {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+
+/* Línea decorativa */
+.stat-line {
+  width: 24px;
+  height: 2px;
+  background: #f5d76e;
+}
+
+/* Texto descriptivo */
+.stat span {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.60);
+}
+
+/* ===========================
+   COLUMNA DERECHA
+   position: relative para
+   posicionar todos los elementos
+   encima unos de otros
+=========================== */
+.col-right {
+  position: relative;
+  height: 480px;
+}
+
+/* ===========================
+   ELEMENTOS DECORATIVOS
+   Todos con position: absolute
+=========================== */
+.deco {
+  position: absolute;
+}
+
+/* Estrella oscura — arriba centro */
+.star-dark {
+  width: 70px;
+  height: 70px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Estrella amarilla — abajo derecha */
+.star-yellow {
+  width: 65px;
+  height: 65px;
+  bottom: 20px;
+  right: -10px;
+  z-index: 10;
+}
+
+/* Diamante blanco — dentro card amarilla */
+.diamond-white {
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  right: 30px;
+  z-index: 8;
+}
+
+/* Diamante gris — dentro card oscura */
+.diamond-gray {
+  width: 55px;
+  height: 55px;
+  top: 40px;
+  right: 20px;
+  z-index: 6;
+}
+
+/* ===========================
+   TARJETA AMARILLA
+   Cuadro redondeado de fondo
+=========================== */
+.card-yellow {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  background: #f5d76e;
+  border-radius: 20px;
+  top: 40px;
+  left: 30px;
+  z-index: 3;
+}
+
+/* ===========================
+   CORAZÓN DECORATIVO
+   Dentro de la card amarilla
+=========================== */
+.heart {
+  position: absolute;
+  bottom: -10px;
+  left: 90px;
+  width: 190px;
+  height: 110px;
+  z-index: 4;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+}
+
+.ctrl {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: 40px 28px;
+    min-height: auto;
+  }
+
+  .col-right {
+    height: 420px;
+  }
+
+  .card-yellow { width: 220px; height: 240px; }
+  .card-dark   { width: 180px; height: 220px; }
+  .phone       { width: 160px; }
+}
