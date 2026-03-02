@@ -34,16 +34,16 @@ nav {
 .logo-circle {
   width: 56px;
   height: 56px;
-  border: 1.5px solid var(--black);
+  
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  animation: spin 18s linear infinite;
+  
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
+
 
 .logo-circle svg { width: 44px; height: 44px; }
 
@@ -121,12 +121,12 @@ nav {
 /* starburst decoration */
 .starburst {
   position: absolute;
-  top: -8px;
-  left: 58px;
-  width: 54px;
-  height: 54px;
+  top: -6vw;
+  left: -4vw;
+  width: 1vw;
+  height: 1vw;
   z-index: 3;
-  animation: pulse 3s ease-in-out infinite;
+  
 }
 
 @keyframes pulse {
@@ -181,15 +181,25 @@ nav {
 }
 
 /* diamond sparkles on card */
-.sparkle {
+.sparkle-tl {
   position: absolute;
-  fill: none;
-  stroke: rgba(255,255,255,0.7);
-  stroke-width: 1.5;
+  top: 1vw;
+  left: 1vw;
+  width: 5vw;
+  height: 5vw;
+  z-index: 3;
+}
+ .sparkle-br {
+  position: absolute;
+  bottom: 3vw;
+  right: 2vw;
+  width: 2vw;
+  height: 2vw;
+  z-index: 3;
 }
 
-.sparkle-tl { top: 20px; left: 20px; width: 28px; height: 28px; }
-.sparkle-br { bottom: 24px; right: 24px; width: 28px; height: 28px; }
+
+
 
 /* badge chips */
 .badge {
